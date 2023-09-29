@@ -1,31 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Palácio dos Sabores</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
 
 </head>
 <body> 
-  <div class="conteudo">
-    <nav>
-        <img src="./img/logo.png" alt="logo">
-        <a href="#"><b>Sobre nós</a></b>
-        <a href="#"><b>Promoções</a></b>
-        <a href="#"><b>Sabores</a></b>
-        <a href="#"><b>Pedidos</a></b>
-        <a href="#"><b>Contato</a></b>
-    </nav>
+    <head>
+        <nav>
+            <img src="./img/logo.png" width="50" height="70" alt="logo">
+            <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+    
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contato">Sobre</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li> 
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </head>
+      <main></main> 
 
     <h1 id="pedidos">Pedidos</h1>
     
     <h3>Escolha a borda de sua pizza: </h3><br><br>
-         
+    <hr>     
+
     <form class="bordas">
          <input type="radio" name="bordas"><label>Nenhuma</label><br><br><br>
          <input type="radio" name="bordas"><label>Catupiry</label><br><br><br>
@@ -33,7 +48,8 @@
          <input type="radio" name="bordas"><label>Chocolate</label></form>
          <br><br>
 
-    <h3>Agora selecione o saber da sua pizza: </h3><br>
+    <h3>Agora selecione o saber da sua pizza: </h3>
+    <hr>
 
      <form class="sabor">
          <input type="checkbox" name="sabor"><label>Portuguesa</label><br><br><br>
@@ -46,17 +62,57 @@
          <input type="checkbox" name="sabor"><label>Brigadeiro</label><br><br><br>
          <input type="checkbox" name="sabor"><label>4 Queijo</label>
 </form>
-<br><br><br>
-<footer class="footer">
-    <button>
-        <a href="index.html">Finalizar compra</a>
-   </button>
- <div class="rede-social">
-    <img src="./img/rede01.png" alt="Instagram">
-    <img src="./img/rede02.png" alt="Facebook">
-    <img src="./img/rede03.png" alt="Twitter">
-    <img src="./img/rede04.png" alt="Threads">
-</div>
+        <button>Finalizar compra</button>
+<footer>
+    <div class="container-footer" id="contato">
+        <div class=" sec sobre">
+            <h2>Sobre</h2>
+            <p>Fundada a mais de 10 anos!</p>
+                <ul class="redes">
+                    <li><a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        <div class="sec links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Contato">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li> 
+                <li><a href="#contato">Contato</a></li>  
+            </ul>
+        </div>
+        <div class="sec links">
+            <h2>Créditos Imagens</h2>
+            <ul>
+                <li><a href="#">Freepik</a></li>
+                <li><a href="#">Unsplash</a></li>
+                <li><a href="#">Figma</a></li>
+                <li><a href="#">Devicon</a></li> 
+            </ul>
+        </div>
+        <div class="sec contato">
+            <h2>Contato</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span>Santa Bárbara 316<br>
+                    Av. Jocelin de Oliveira Campos, BR Feira - Serrinha,<br>Centro</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <p><a href="Tel:+1 235 584 6699">+1 235 584 6699</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
+    <div class="copy">
+        <p>Desenvolvido por Daniela Almeida</p>
+        <p>Todos direitos reservados &copy; 2023</p>
+    </div>
+    <script src="mobile-navbar.js"></script>
 </body>
 </html>
