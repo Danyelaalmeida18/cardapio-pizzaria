@@ -13,14 +13,14 @@ function createMobileNavbar(mobileMenu, navList, navLinks) {
                 if (navLink.style.animation) {
                     navLink.style.animation = "";
                 } else {
-                    // Adicione uma animação personalizada para os links aqui
+            
                     navLink.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
                 }
             });
 
         const mobileMenuElement = document.querySelector(mobileMenu);
         if (mobileMenuElement) {
-                // Adicione uma classe para alternar entre o ícone do menu e o ícone "X"
+          
            mobileMenuElement.classList.toggle(activeClass);
             }
         }
